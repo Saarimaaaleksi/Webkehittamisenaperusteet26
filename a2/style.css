@@ -1,0 +1,129 @@
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #e8f6f8, #dceff3);
+    color: #263238;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+header {
+    background: linear-gradient(135deg, #319bb6, #176b82);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    top: -150px;
+    left: -100px;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    bottom: -130px;
+    right: -80px;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: clamp(28px, 5vw, 36px);
+    text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav {
+    background-color: #29434e;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9ee8f0;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: white;
+    padding: clamp(20px, 4vw, 30px);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #29434e;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.kuvaosio {
+    text-align: center;
+}
+
+.kuvaosio img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #319bb6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.galleria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.galleria img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
