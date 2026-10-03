@@ -115,7 +115,7 @@ footer {
 
 .galleria {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
 }
 
@@ -127,3 +127,10 @@ footer {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+@media (max-width: 600px) {
+    .galleria {
+        grid-template-columns: 1fr;
+    }
+}
+
