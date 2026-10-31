@@ -1,0 +1,87 @@
+<!-- Aleksi Saarimaa -->
+
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miloun galleria</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/pikkumilounkuva.jpg" type="image/jpeg">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Etusivu</a>
+    <a href="gallery.html">Galleria</a>
+    <a href="register.html">Rekisteröityminen</a>
+</nav>
+
+<header>
+    <h1>Rekisteröityminen</h1>
+    <p>Rekisteröityminen Miloun fanikuntaan</p>
+</header>
+
+<main>
+    
+    <form action="https://httpbin.org/post" method="post">
+
+        <img src="images/pikkumilounkuva.jpg" alt="Pikku milou" class="pikkumilou">
+        <h1>Rekisteröidy tästä</h1>
+        <p>Liity Miloun fanikuntaan tästä!</p>
+        
+
+
+        <div class="form-group">
+            <label for="name">Koko nimi</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Sähköposti osoite</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="username">Käyttäjänimi</label>
+            <input type="text" id="username" name="username"
+                    minlength="3" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Salasana</label>
+            <input type="password" id="password" name="password"
+                    minlength="8" required>
+        </div>
+
+        <div class="form-group">
+            <label for="user-type">Käyttäjä tyyppi</label>
+            <select id="user-type" name="user_type" required>
+                <option value="" selected disabled>Valitse käyttäjä tyyppi</option>
+                <option value="visitor">Koirakaveri</option>
+                <option value="member">Koiran omistaja</option>
+                <option value="creator">Koirista pitävä</option>
+            </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="terms" name="terms"
+                    value="accepted" required>
+            <label for="terms">Hyväksyn käyttöehdot ja tietosuojakäytännön.</label>
+        </div>
+
+        <button type="submit">Rekisteröidy</button>
+    
+    
+    
+</main>
+
+<footer>
+    <p>A5 - oma verkkosivu</p>
+</footer>
+
+</body>
+
+</html>
